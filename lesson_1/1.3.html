@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
+
 <body>
-    <script>
-        'use strict';
+   <script>
+      'use strict';
 
-        let result_1 = 10 + 10 + "10";
-        console.log(result_1);
-        /* 1. к 10 прибавляем 10, получаем 20
-           2. Далее идет 'конкатенация', 20 склеиваем со строкой 10, получаем 2010
-           3. 2010 присваиваем переменной result_1
-           4. result_1 выводим в консоль
-        */
+      let result_1 = 10 + 10 + "10";
+      console.log(result_1);
+      /* 1. к 10 прибавляем 10, получаем 20
+         2. Далее идет 'конкатенация', 20 склеиваем со строкой 10, получаем 2010
+         3. 2010 присваиваем переменной result_1
+         4. result_1 выводим в консоль
+      */
 
-        let result_2 = 10 + "10" + 10;
-        console.log(result_2);
-        /* 1. 10 склеиваем с 10, получаем 1010
-           2. Далее к 1010 прибавляем 10, получаем 101010
-           3. 101010 присваиваем переменной result_2
-           4. result_2 выводим в консоль
-        */
+      let result_2 = 10 + "10" + 10;
+      console.log(result_2);
+      /* 1. 10 склеиваем с 10, получаем 1010
+         2. Далее к 1010 прибавляем 10, получаем 101010
+         3. 101010 присваиваем переменной result_2
+         4. result_2 выводим в консоль
+      */
 
-        let result_3 = 10 + 10 + +"10";
-        console.log(result_3);
-        /* 1. к 10 прибавляем 10, получаем 20
-           2. Так как +"10" получаеться из строки числом, то к 20 прибавляем 10, выходит 30
-           3. 30 присваиваем переменной result_3
-           4. result_3 выводим в консоль
-        */
+      let result_3 = 10 + 10 + +"10";
+      console.log(result_3);
+      /* 1. к 10 прибавляем 10, получаем 20
+         2. Так как +"10" получаеться из строки числом, то к 20 прибавляем 10, выходит 30
+         3. 30 присваиваем переменной result_3
+         4. result_3 выводим в консоль
+      */
 
-        let result_4 = 10 / -"";
-        console.log(result_4);
-        /* 1. -"" выведет число -0
-           2. Если 10 поделить на -0, будет -Infinity
-           3. -Infinity присваиваем переменной result_4
-           4. result_4 выводим в консоль
-        */
+      let result_4 = 10 / -"";
+      console.log(result_4);
+      /* 1. -"" выведет число -0
+         2. Если 10 поделить на -0, будет -Infinity
+         3. -Infinity присваиваем переменной result_4
+         4. result_4 выводим в консоль
+      */
 
-        let result_5 = 10 / +"2,5";
-        console.log(result_5);
+      let result_5 = 10 / +"2,5";
+      console.log(result_5);
         /* 1. в выражении +"2,5" получиться NaN
-           2. Если 10 поделить на NaN, будет NaN
-           3. NaN присваиваем переменной result_5
-           4. result_5 выводим в консоль
-        */
-    </script>
+         2. Если 10 поделить на NaN, будет NaN
+         3. NaN присваиваем переменной result_5
+         4. result_5 выводим в консоль
+      */
+   </script>
 </body>
+
 </html>
